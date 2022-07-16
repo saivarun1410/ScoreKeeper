@@ -1,0 +1,69 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scorekeeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        body{
+            background-image: url('https://images.unsplash.com/photo-1547127796-06bb04e4b315?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZGFyayUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60');
+            background-size: cover;
+            background-position: center;
+        }
+        .winner{
+            color:green;
+        }
+        .loser{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="columns">
+           <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-2by1">
+                        <img src="https://images.unsplash.com/photo-1618214839021-3fbe98a597bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cm9jayUyMHBhcGVyJTIwc2Npc3NvcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="">
+                    </figure>
+                </div>
+                <header class="card-header">
+                  <p class="card-header-title">
+                    Scorekeeper
+                  </p>
+                </header>
+                <div class="card-content">
+                  <div class="content">
+                    <h1 class="title is-1"><span id="p1display">0</span> | <span id="p2display">0</span></h1>
+                    <p class="subtitle">Use the buttons below to keep score</p>
+                    <label for="playto" class="label is-large is-inline">Required To Win:</label>
+                    <div class="select is-rounded">
+                        <select name="" id="playto">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                  </div>
+                </div>
+                <footer class="card-footer">
+                    <button class="is-success button card-footer-item" id="player1">Player One</button>
+                    <button class="is-info button card-footer-item" id="player2">Player Two</button>
+                    <button class="is-danger button card-footer-item" id="reset">Reset</button>
+                    
+                </footer>
+              </div>
+           </div> 
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
+
