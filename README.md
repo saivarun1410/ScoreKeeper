@@ -7,4 +7,4 @@ Scorekeeper helps you to record the scores of individuals specifically. This sco
 ## BackEnd
 * Javascript
 ## Deployment
-* https://varun-scorekeeper.herokuapp.com/
+* https://varun-scorekeeper.netlify.app/
